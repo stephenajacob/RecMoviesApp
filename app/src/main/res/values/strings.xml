@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RecMoviesApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_get_movie">SingleMovie</string>
+    <string name="title_activity_query_movies">ListQueryMovies</string>
+    <string name="title_activity_query_genres">QueryGenres</string>
+    <string name="title_activity_movie_list">MovieList</string>
+    <string name="title_activity_show_movie_data">ShowMovieData</string>
+    <string name="title_activity_row_layout">RowLayout</string>
+    <string name="title_activity_list_movies">ListMoviesActivity</string>
+    <string name="title_activity_rated_movie_list">RatedMovieList</string>
+    <string name="application_name">Movie Recommender</string>
+    <string name="single_movie_button">Select Favorite Movie</string>
+    <string name="search_title_button">Query by Title</string>
+    <string name="search_genre_button">Query by Genre</string>
+    <string name="recommend_button">Recommended for You</string>
+    <string name="clear_button">Clear your Ratings</string>
+    <string name="cancel_button">Exit</string>
+    <string name="title_activity_recommend__movie">Recommend_Movie</string>
+    <string name="title_activity_clear_ratings">ClearRatings</string>
+    <string name="instructions">In order to obtain recommendations, you must first rate some movies</string>
+    <string name="instructions2">Now ask for recommendations</string>
+    <string name="backToMain">Return to menu</string>
+    <string name="btnSearchTitles">Search Movie Titles</string>
+    <string name="btnSearchGenres">Search Movie Genres</string>
+    <string name="btnTitleHint">Enter a title</string>
+    <string name="btnGenreHint">Enter a genre</string>
+    <string name="title_activity_example">example</string>
+
+
+</resources>

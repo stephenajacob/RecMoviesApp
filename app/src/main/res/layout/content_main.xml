@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/imgblue"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ie.ait.stephen.recmoviesapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearId1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image1"
+            android:background="@drawable/film_reel1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/application_name"
+            android:text="@string/application_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructions"
+        android:text="@string/instructions"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/linearId1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/single_movie_button"-->
+        <!--android:id="@+id/NewMovie"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textStyle="italic"-->
+        <!--android:layout_below="@+id/application_name"-->
+        <!--android:onClick="onButtonClick"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="7dp"/>-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BlistOfMovies"
+        android:text="@string/search_title_button"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/instructions"
+        android:background="@drawable/rnd_button"
+        android:layout_marginTop="7dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BQueryMovieGenres"
+        android:text="@string/search_genre_button"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/BlistOfMovies"
+        android:background="@drawable/rnd_button"
+        android:layout_marginTop="7dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BRated"
+        android:text="Rated Movies"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_below="@id/BQueryMovieGenres"
+        android:background="@drawable/rnd_button"
+        android:layout_marginTop="7dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BClear"
+        android:text="@string/clear_button"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_below="@id/BRated"
+        android:background="@drawable/rnd_button"
+        android:layout_marginTop="7dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructions2"
+        android:text="@string/instructions2"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/BClear"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BRcmder"
+        android:text="@string/recommend_button"
+        android:textSize="15sp"
+        android:background="@drawable/rnd_button"
+        android:textStyle="italic"
+        android:layout_below="@id/instructions2"
+        android:layout_marginTop="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClick"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BClear"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
